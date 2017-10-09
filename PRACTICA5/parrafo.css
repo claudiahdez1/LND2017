@@ -1,0 +1,27 @@
+
+h1 {
+	color: red;
+	font-family: arial;
+}
+
+p {
+   	color: #B42954;
+   	font-family: Times New Roman;
+
+}
+
+ul li {
+	color:yellow;
+	font-family: Courier New;
+	background-color: #7F7F7F;
+	font-size: 12px;
+}
+
+strong {
+
+	color: #7806FF;
+}
+
+em {
+	color: #3FA523;
+}
