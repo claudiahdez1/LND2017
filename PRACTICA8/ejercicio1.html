@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>practica8</title>
+	<link rel="stylesheet" type="text/css" href="ejer1.css">
+
+</head>
+
+<body>
+	<h1>Porfavor, introduce tus datos.</h1>
+<form>
+	<fieldset>
+  		<legend>Tu cara</legend>
+  		<label>Foto:</label><input type="file" id="files" name="files[]"  required />	<br>		
+			<label>Previsualización de la imagen:</label><output id="list"></output>
+
+
+	</fieldset>
+	<fieldset>
+		<legend>Datos Generales</legend>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" placeholder="Nombre Completo " required>
+		<br>
+		<label for="genero">Genero:</label>
+		<input type ="radio" required>mujer
+		<input type ="radio">Hombre
+		<br>
+		<label for="edad">Edad:</label>
+ 		<input type="text" id="nombre" />
+		<br>
+		 <label for="fecha">Fecha de nacimiento:</label>
+		 <input type="date">
+		<br>
+		<label for="color">Color favorito:</label>
+		<input type="color">
+		<br>
+		<label for="pais">Pais:</label>
+		<select name="pais">
+		<option value="ale">Alemania</option>
+		<option value="es">España</option>
+		<option value="it">Italia</option>
+	    </select>
+		<br>
+ 	</fieldset>
+
+	<fieldset>
+		<legend>Otras Caracteristicas</legend>
+
+		<label for="altura">Altura:</label>
+		<span class="rojo">Bajo</span><input type="range" name="altura" /><span class="azul">Alto</span><br>
+		<label for="salario">Salario:</label>
+		<span class="rojo">Pobre</span><input type="range" name="salario" /><span class="azul">Rico</span>
+	</fieldset>
+
+	<fieldset>
+		<legend>Informacion de contacto</legend>
+		<label for="Email">Email:</label>
+ 		 <input type="text" id="nombre" required />
+ 		 <br>
+ 		 <label for="Movil">Movil:</label>
+ 		 <input type="text" id="nombre" />
+ 		 <br>
+ 		  <label for="Direccion">Direccion:</label>
+ 		 <textarea rows="2" cols="30"></textarea>
+ 		 <br>
+ 		<label for="metodo">metodo de contacto:</label> 
+		<input type="checkbox" name="condiciones" checked="checked" />Email
+		<input type="checkbox" name="condiciones" checked="checked" />Whatsapp
+		<input type="checkbox" name="condiciones" checked="checked" />Stype
+	</fieldset>
+	<br>
+		<input type="submit" name="Enviar">
+
+</form>
+ <script>
+              function archivo(evt) {
+                  var files = evt.target.files; // FileList object
+             
+                  // Obtenemos la imagen del campo "file".
+                  for (var i = 0, f; f = files[i]; i++) {
+                    //Solo admitimos imágenes.
+                    if (!f.type.match('image.*')) {
+                        continue;
+                    }
+             
+                    var reader = new FileReader();
+             
+                    reader.onload = (function(theFile) {
+                        return function(e) {
+                          // Insertamos la imagen
+                         document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                        };
+                    })(f);
+             
+                    reader.readAsDataURL(f);
+                  }
+              }
+             
+              document.getElementById('files').addEventListener('change', archivo, false);
+      </script>
+</body>
+</html>

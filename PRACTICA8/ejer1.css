@@ -1,0 +1,28 @@
+fieldset {
+	border-style: solid;
+	border-color: yellow;
+	 background-color: #ffffb3;
+}
+
+label:hover{
+	font-size: 30px;
+	}
+
+label{
+	width: 30%;
+	display: block;
+	float: left;
+}
+
+.rojo{
+	background: red;
+}
+
+.azul{
+	background: purple;
+}
+
+.thumb{
+
+	width: 300px;
+}
