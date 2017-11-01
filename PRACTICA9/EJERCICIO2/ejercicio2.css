@@ -1,0 +1,61 @@
+#contenedor {
+	width: 1000px;
+	margin: auto;
+}
+
+header{
+	width: 100%;
+	background: black;
+	display: block;
+	float: left;
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	padding: 2px;
+	color: white;
+
+}
+aside{
+	display: block;
+	float: left;
+	width: 15%;
+	background: #E0E1DC;
+	height: 260px;
+}
+
+aside a{
+	color: black;
+	text-decoration: none;
+}
+
+aside ul{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 6px;
+	text-indent: left;
+}
+
+aside li{
+	margin-top:7px;
+}
+
+section{
+	float: left;
+	display: block;
+	width: 30%;
+	font-size: 16px;
+	padding-left: 15px;
+
+}
+
+footer{
+   width:1000px;
+   display: block;
+   text-align: center;
+   float: left;
+   background: black;
+   color: white;
+}
+	
