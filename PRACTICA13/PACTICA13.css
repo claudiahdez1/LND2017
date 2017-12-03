@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Indie+Flower');
+*{
+	 box-sizing:border-box;/* el padding y border de ese elemento no incrementan su ancho*/
+	 margin: 0; /*se usan para crear espacio alrededor de elementos, fuera de cualquier borde definido.*/
+	 font-size: 15px;/*establece el tamaño de una fuente.*/
+	 padding: 0;/* se utilizan para generar espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.*/
+	 border: 0;/*permite especificar el estilo, el ancho y el color del borde de un elemento.*/
+	
+	 
+}
+
+div{
+	
+	-ms-flex-pack: distribute;
+	
+	    justify-content: space-around;
+
+}
+
+.container{
+	
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	background: black;
+}
+
+
+.principio{
+		-ms-flex-preferred-size: 20%;
+		    flex-basis: 20%;
+		height: 400px;
+		background: yellow;
+		border: 5px solid black;
+		
+}
+
+.centro{
+	-ms-flex-preferred-size: 60%;
+	    flex-basis: 60%;
+	height: 400px;
+	
+	display: -webkit-box;
+	
+	display: -ms-flexbox;
+	
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+
+
+}
+
+.cua1{
+	-ms-flex-preferred-size:33.3%;
+	    flex-basis:33.3%;
+	height: 300px;
+	background:green;
+    border-top: 5px solid black;
+}
+.cua2{
+	-ms-flex-preferred-size:33.3%;
+	    flex-basis:33.3%;
+	height: 300px;
+	background: orange;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+}
+
+.cua3{
+	-ms-flex-preferred-size:33.3%;
+	    flex-basis:33.3%;
+	height: 300px;
+	background: blue;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+}
+
+.cua4{
+	-ms-flex-preferred-size: 33.3%;
+	    flex-basis: 33.3%;
+	height: 100px;
+	background: orange;
+	border-bottom: 5px solid black;
+	border-top: 5px solid black;
+
+}
+.cua5{
+
+	-ms-flex-preferred-size: 66.66%;
+
+	    flex-basis: 66.66%;
+	height: 100px;
+	background: yellow;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+
+}
+
+
+
+
+
+
+
+.final{
+	-ms-flex-preferred-size: 20%;
+	    flex-basis: 20%;
+	height: 400px;
+	background: pink;
+	border: 5px solid black;
+}
+p{
+	color:blue;
+	 font-family: 'Barlow Condensed', sans-serif;
+}
+
+span{
+	color: red;
+	font-family: 'Indie Flower', cursive;
+}
