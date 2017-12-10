@@ -1,0 +1,19 @@
+section {
+	width: 600px;
+	background-color:#F4F6F6;
+	margin: auto;
+}
+
+#parra1 {
+	color: blue;
+}
+
+#parra2 {
+	font-family: verdana;
+}
+
+#parra3 {
+	color: red;
+	text-align: justify;
+	font-size: 300%;
+}
