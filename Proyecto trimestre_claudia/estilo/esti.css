@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+*{
+	box-sizing:border-box;
+	margin: 0 auto;
+	padding:0;
+}
+
+.contenedor{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 100%;
+	max-width: 1280px;
+
+}
+section{
+	background: black;
+}
+
+header{
+		
+	margin: 0 auto;		
+	padding-top:3%;
+	padding-bottom:3%;
+	max-width: 1280px;
+	background: black;	
+}
+.cont{
+	margin:  auto;
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	background: black;
+	border:solid 1px #03C7D0;
+	box-shadow: 10px 10px 144px 2px rgba(0,58,61,1);
+}
+
+
+
+.logo{
+	width: 20%;	
+}
+
+
+.logo h1 {
+	padding-left: 10px;
+	color:white;
+	font-size:1.5em;
+	margin: auto;
+	margin-top:6%;	
+	text-align: center;
+}
+
+
+
+nav {	
+  width: 80%;
+  margin:0 auto;   
+}
+
+
+
+nav p {
+ text-align: center;
+  }
+
+
+ .toggle, [id^=drop] {
+ display: none;
+}
+
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+}
+
+
+nav ul li {
+ width: 150px;
+  display: inline-block;  
+}
+
+
+nav a {
+	text-align: center;
+  display: block;
+  padding: 0;
+  color: black;
+  font-size: 11px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #03C7D0;
+  font-family: 'Rosario', sans-serif; 
+}
+
+
+
+nav a:hover { 
+  background: #00ADB6;
+  color: black;
+ }
+
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul {
+ display: inherit;
+ }
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+
+li > a:after {
+ content: ' '; 
+}
+
+li > a:only-child:after {
+ content: '';
+  }
+
+.centro{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 100%;
+	
+}
+
+.video{
+	flex-basis: 100%;
+}
+
+video{
+	display: flex;
+	flex-flow: row wrap;
+	width:100%;
+}
+.top{
+	background-image: url(/estilo1/img/fontex1.png);
+	width: 100%;	
+	padding:50px;	
+}
+
+
+
+
+
+
+.gen{
+	flex-basis: 40%;
+	padding: 30px;
+}
+
+
+.gen h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #02B5BE;
+	background: black;
+	padding: 10px;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 3px solid #02B5BE;
+	box-shadow: -1px 0px 68px -7px rgba(2,181,190,1);
+	
+}
+
+.gen p{
+
+	text-align: justify;
+	padding: 5px;
+	color: white;
+
+}
+
+.gen a{
+	text-decoration: none;
+	color: #02B5BE;
+	background: black;
+	padding: 5px;
+
+}
+
+.gale h1{
+	flex-basis: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #02B5BE;
+	background: black;
+	padding: 10px;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 3px solid  #02B5BE;
+	box-shadow: -1px 0px 68px -7px rgba(2,181,190,1);
+
+}
+.gale {
+	flex-basis: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+
+.gale div{
+	text-align: center;
+}
+
+.gale img {
+	width: 97%;
+	height: 180px;
+
+}
+
+
+.fot1{
+	flex-basis: 30%;
+	
+}
+
+
+.fot2{
+	flex-basis: 40%;
+	
+}
+
+
+.fot3{
+	flex-basis: 30%;
+	
+}
+
+.fot4{
+	flex-basis: 35%;
+	
+}
+
+
+.fot5{
+	flex-basis: 30%;
+	
+}
+
+
+.fot6{
+	flex-basis: 35%;
+	
+}
+
+
+
+
+
+/***************************************************************
+**
+******************************************************************
+************************pagina nikon******************************
+******************************************************************/
+.nikon1{
+	flex-basis: 50%;
+	margin-bottom: 30px;
+}
+
+.nikon1 img {
+	width: 50%;
+	margin-left: 20%;
+	margin-top: 10%;
+	
+
+}
+.texto{
+	flex-basis: 50%;
+}
+.texto p {
+	text-align: justify;
+	padding:40px;
+	font-size: 20px;
+	color: white;
+
+
+}
+.texto h3{	
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+
+}
+
+.listi{
+	flex-basis: 100%;
+	
+
+	
+}
+.listi h2{
+color:black;
+background: #02B5BE;
+padding-left: 20px;
+
+}
+
+.listi ul{
+	list-style: none;
+}
+.listi ul ul{
+	display: none;
+	position: relative;
+}
+.listi ul li:hover > ul {
+	display: inline-block;
+}
+
+.listi ul li ul li{
+	color:white;
+
+}
+
+
+td{
+	color:black;
+	border: 3px solid black;
+	
+}
+table{
+
+	border-collapse: collapse;
+	margin: 20px;
+	padding: 50px;
+	text-align: center;
+	font-size: 20px;
+	background: #00ADB6;
+
+}
+
+
+/***********************************************************
+******************contacto********************************
+************************************************************/
+
+
+.contacto{
+	display: flex;
+	flex-flow: row;
+	flex-basis: 100%;
+	
+}
+
+
+form{
+	color: #02B5BE;
+	flex-basis: 20%;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 30px;
+	border: 3px solid #00ADB6;
+	padding: 50px;
+	border-radius: 15px;
+	box-shadow: -1px 11px 117px 27px rgba(0,173,182,1);
+	background: #000000;
+	background: -moz-linear-gradient(left, #000000 0%, #000000 16%, #00332c 42%, #07b3a5 92%, #07b3a5 96%, #05e6d3 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #000000), color-stop(16%, #000000), color-stop(42%, #00332c), color-stop(92%, #07b3a5), color-stop(96%, #07b3a5), color-stop(100%, #05e6d3));
+	background: -webkit-linear-gradient(left, #000000 0%, #000000 16%, #00332c 42%, #07b3a5 92%, #07b3a5 96%, #05e6d3 100%);
+	background: -o-linear-gradient(left, #000000 0%, #000000 16%, #00332c 42%, #07b3a5 92%, #07b3a5 96%, #05e6d3 100%);
+	background: -ms-linear-gradient(left, #000000 0%, #000000 16%, #00332c 42%, #07b3a5 92%, #07b3a5 96%, #05e6d3 100%);
+	background: linear-gradient(to right, #000000 0%, #000000 16%, #00332c 42%, #07b3a5 92%, #07b3a5 96%, #05e6d3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#05e6d3', GradientType=1 );
+
+}
+
+input{
+
+	margin-bottom: 10px;
+
+}
+
+
+/***********************************************************
+************************pie de pagina**************************
+************************************************************/
+
+footer{
+	color: white;
+	background: black;
+	border-top: 3px solid #00ADB6;
+	padding: 40px; 
+	flex-basis: 100%;
+	text-align: center;
+
+}
+
+/***********************************************************
+***************************actualidades***********************
+*************************************************************/
+
+.texto1 p {
+	color: white;
+	font-size: 20px;
+	text-align: justify;
+	margin-bottom: 20px;
+
+	
+
+}
+.texto1{
+	flex-basis: 80%;
+	margin: auto;
+}
+
+.texto1 h3{
+	flex-basis: 40%;
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+	border: 3px solid #00ADB6;
+	padding: 15px;
+	box-shadow: -1px 0px 68px -7px rgba(2,181,190,1);
+	margin-bottom: 40px;
+}
+
+.actualidad{
+	flex-basis: 25%;
+	margin: auto;
+}
+
+
+.actualidad img {	
+	width: 100%;	
+}
+
+
+/************************************************************
+*************galeria foto*************************************
+*************************************************************/
+
+.galeri h1{
+	flex-basis: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #02B5BE;
+	background: black;
+	padding: 10px;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+	box-shadow: -1px 0px 68px -7px rgba(2,181,190,1);
+}
+.galeri {
+	flex-basis: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+
+.galeri div{
+	text-align: center;
+}
+
+.galeri div img {
+	width: 97%;
+	height: 250px;
+
+}
+
+
+.galeri1{
+	flex-basis: 30%;
+	
+}
+
+
+.galeri2{
+	flex-basis: 40%;
+	
+}
+
+
+.galeri3{
+	flex-basis: 30%;
+	
+}
+
+.galeri4{
+	flex-basis: 35%;
+	
+}
+
+
+.galeri5{
+	flex-basis: 30%;
+	
+}
+
+
+.galeri6{
+	flex-basis: 35%;
+	
+}
+
+.galeri7{
+	flex-basis: 30%;
+	
+}
+
+
+.galeri8{
+	flex-basis: 40%;
+	
+}
+
+
+.galeri9{
+	flex-basis: 30%;
+	
+}
+
+
+
+
+
+/************************************************************
+**************************************************************
+*****AJUSTEPANTALLA
+***********************************/
+
+@media only screen and (max-width: 1100px){
+
+nav ul li {
+ width: 120px;
+}
+
+
+ nav li a {
+ 	font-size: 10px;
+ }
+
+
+@media only screen and (max-width: 768px){
+
+header{
+	padding: 0px;
+	min-width: 0;
+}
+
+
+.cont{
+	background: #00ADB6;
+}
+
+.logo {
+	width: 100%
+}
+
+.cont nav img {
+	padding-top: 5px;
+	width: 50px;
+}
+
+.gen{
+	flex-basis: 100%;
+}
+
+
+.gale img {
+	width: 97%;
+
+	height: 125px;
+}
+
+nav{
+	width: 100%;
+}
+
+.nikon1{
+	flex-basis: 50%;
+	margin-bottom: 30px;
+	margin: auto;
+}
+
+.nikon1 img {
+	width: 50%;
+	margin-top: 10%;
+	
+
+}
+/***************MENU***********************/
+
+nav {
+  margin: 0;
+  }
+
+.toggle + a, .menu { 
+  display: none; 
+}
+
+ nav a {
+ 	color: white;
+ 	font-size: 50px;
+ }
+
+
+.toggle {
+  display: block;
+  background: #02B5BE;
+  padding: 5px 0px 5px 20px;
+  color: white;
+  font-size: 20px;  
+  text-decoration: none;
+  border: none;
+}
+
+
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle, nav ul ul a {
+ padding: 0 20px;.
+
+
+ }
+
+.toggle nav a {
+font-size: 30px;
+}
+
+nav a:hover,
+ nav ul ul ul a { 
+  background: black; color: white;
+  
+ }
+
+nav ul li ul li .toggle, nav ul ul a {
+  background-color: #c90808; color: white;
+
+}
+
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+}
+
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+
+.centro{
+	flex-flow: column;
+}
+
+
+.gale {
+  flex-basis: 100%;
+  margin-bottom: 200px;
+  
+}
+
+
+.gale div{
+  text-align: center;
+    
+}
+
+.gale div img {
+  width: 97%;
+}
+
+
+.fot1{
+  flex-basis: 30%;
+  
+}
+
+
+.fot2{
+  flex-basis: 40%;
+  
+}
+
+
+.fot3{
+  flex-basis: 30%;
+  
+}
+
+.fot4{
+  flex-basis: 35%;
+  
+}
+
+
+.fot5{
+  flex-basis: 30%;
+  
+}
+
+
+.fot6{
+  flex-basis: 35%;
+  
+}
+.actualidad  {	
+	flex-basis:50%;	
+}
+.galeri div img {
+	
+	height: 150px;
+
+}
+
+}
+@media all and (max-width : 600px) {
+  .toggle {
+ 
+  font-size: 25px;
+}
+
+.gale img {
+	width: 97%;
+	height: 100px;
+
+
+}
+
+}
